@@ -2,7 +2,7 @@
   "name": "weeklyproject-18012022",
   "version": "0.0.0",
   "private": true,
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node -r dotenv/config ./bin/www.js"
   },
