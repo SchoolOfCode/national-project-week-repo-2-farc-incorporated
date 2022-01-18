@@ -17,6 +17,7 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "dotenv": "^14.2.0",
     "nodemon": "^2.0.15",
