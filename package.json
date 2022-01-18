@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node -r dotenv/config ./bin/www.js"
+    "start": "node -r dotenv/config ./bin/www.js",
+    "createtable": "node -r dotenv/config ./db/scripts/createtable.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
