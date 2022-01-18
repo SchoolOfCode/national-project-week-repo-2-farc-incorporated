@@ -3,7 +3,11 @@ const router = express.Router();
 import cors from "cors";
 router.use(cors());
 
-import { getAllUsers, addUserToTable } from "../models/users.js";
+import {
+	getAllUsers,
+	addUserToTable,
+	deleteUserFromTable,
+} from "../models/users.js";
 
 router
 	.route("/users")
@@ -22,4 +26,13 @@ router
 			payload: result,
 		});
 	});
+router
+	.route("/users/:id")
+
+	.delete(async (req, res) => {
+		const { id } = req.params;
+		await deleteUserFromTable(id);
+		res.json({ success: true, message: "user has been deleted" });
+	});
+
 export default router;
