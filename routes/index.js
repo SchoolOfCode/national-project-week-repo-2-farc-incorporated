@@ -9,8 +9,9 @@ router
 	.route("/users")
 	.post(async (req, res) => {
 		const { fullname, nickname, city, hobbies } = req.body;
+		console.log(req.body);
 
-		const result = await addUserToTable(req.body);
+		const result = await addUserToTable(fullname, nickname, city, hobbies);
 		res.json({ success: true, message: "user added", payload: result });
 	})
 	.get(async (req, res) => {
