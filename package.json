@@ -2,8 +2,9 @@
   "name": "weeklyproject-18012022",
   "version": "0.0.0",
   "private": true,
+  "type":"module",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node -r dotenv/config ./bin/www.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
