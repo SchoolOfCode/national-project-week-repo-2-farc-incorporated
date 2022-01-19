@@ -1,5 +1,5 @@
 import pg from "pg";
-import { dbPort } from "../config.js";
+import URL from "../config.js";
 
 const pool = new pg.Pool({
 	// user: dbPort.PGUSER,
@@ -8,7 +8,7 @@ const pool = new pg.Pool({
 	// password: dbPort.PGPASSWORD,
 	// port: dbPort.PGPORT,
 
-	connectionString: process.env.DATABASE_URL,
+	connectionString: URL,
 	ssl: { rejectUnauthorized: false },
 });
 
