@@ -13,6 +13,19 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+  return false;
+}
+
 // app.listen(4444, () => {
 // 	console.log(`Listening on port 4444`);
 // });
