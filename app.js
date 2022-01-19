@@ -26,8 +26,4 @@ function normalizePort(val) {
   return false;
 }
 
-// app.listen(4444, () => {
-// 	console.log(`Listening on port 4444`);
-// });
-
 export default app;
