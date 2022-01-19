@@ -12,3 +12,8 @@ export async function addUserToTable(fullname, nickname, city, hobbies) {
 	);
 	return data.rows;
 }
+
+export async function deleteUserFromTable(id) {
+	const data = await query(`DELETE FROM users WHERE id = $1;`, [id]);
+	return data.rows;
+}
