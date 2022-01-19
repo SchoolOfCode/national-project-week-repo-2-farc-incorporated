@@ -9,7 +9,7 @@ const sqlString = `CREATE TABLE IF NOT EXISTS users (
 )`;
 
 async function createUsersTable() {
-  const res = await query(sqlString);
-  console.log("Created users table", res);
+	const res = await query(sqlString);
+	console.log("Created users table", res);
 }
 createUsersTable();
