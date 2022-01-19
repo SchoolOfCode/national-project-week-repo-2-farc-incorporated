@@ -8,9 +8,11 @@ const pool = new pg.Pool({
 	// password: dbPort.PGPASSWORD,
 	// port: dbPort.PGPORT,
 
-	connectionString: URL,
+	connectionString: process.env.DATABASE_URL,
 	ssl: { rejectUnauthorized: false },
 });
+
+console.log(process.env.DATABASE_URL);
 
 // console.log(pool);
 

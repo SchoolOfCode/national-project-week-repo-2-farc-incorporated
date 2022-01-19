@@ -6,6 +6,6 @@
 // 	dbname: process.env.PGDATABASE,
 // };
 
-export const URL = process.env.DATABASE_URL;
+// export const URL = process.env.DATABASE_URL;
 
-console.log(URL);
+// console.log(URL);
