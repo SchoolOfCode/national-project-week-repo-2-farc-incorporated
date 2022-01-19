@@ -8,7 +8,7 @@ app.use("/", router);
 app.use(cors());
 
 app.listen(4444, () => {
-	console.log(`Listening on port 4444`);
+  console.log(`Listening on port 4444`);
 });
 
 export default app;
