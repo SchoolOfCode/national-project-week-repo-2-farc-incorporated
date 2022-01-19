@@ -1,5 +1,4 @@
 import pg from "pg";
-import URL from "../config.js";
 
 const pool = new pg.Pool({
 	// user: dbPort.PGUSER,
