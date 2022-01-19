@@ -2,10 +2,12 @@ import express from "express";
 const router = express.Router();
 import cors from "cors";
 router.use(
-	cors({
-		origin: "https://bootcampersproject.herokuapp.com/",
-	})
-);
+
+  cors({
+    origin: "https://bootcampersproject.herokuapp.com/",
+  })
+
+
 
 import {
 	getAllUsers,
