@@ -2,10 +2,20 @@ import query from "../index.js";
 
 const sqlString = `CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
-    fullname TEXT,
-    city TEXT,
+    fullName TEXT,
     nickname TEXT,
-    hobbies TEXT  
+    city TEXT,
+    hobbies TEXT,
+    tvShow TEXT,
+    favouriteArtist TEXT, 
+    favouriteFood TEXT, 
+    superPower TEXT, 
+    briefIntroduction TEXT,
+    mostConfidentArea TEXT, 
+    improveKnowledge TEXT,
+    favouriteQuote TEXT
+    
+
 )`;
 
 async function createUsersTable() {
