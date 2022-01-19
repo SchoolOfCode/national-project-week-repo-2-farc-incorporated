@@ -16,10 +16,6 @@ For this project, We will be using Node.js (ES Module), which requires change on
 <summary>Third-party Libraries</summary>
 
 - Express (wireframes) or Express-generator (create files like public and routes)
-  - bin (www.js with the Port details)
-  - Routes (req, res, next / HTTP request methods)
-  - app.js
-  - public (add all the files the users have access, HTML/CSS ...)
 - dotenv (enviroment variables)
 - nodemon (automatically start and stop the server)
 - pg (postgres database)
