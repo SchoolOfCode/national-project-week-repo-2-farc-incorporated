@@ -14,7 +14,7 @@ import {
 } from "../models/users.js";
 
 router
-  .route("/")
+  .route("/users")
   .post(async (req, res) => {
     const { fullname, nickname, city, hobbies } = req.body;
     console.log(req.body);
