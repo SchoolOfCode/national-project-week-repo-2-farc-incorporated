@@ -5,10 +5,45 @@ export async function getAllUsers() {
 	return data.rows;
 }
 
-export async function addUserToTable(fullname, nickname, city, hobbies) {
+export async function addUserToTable(
+	firstname,
+	lastname,
+	nickname,
+	city,
+	briefintroduction,
+	hobbies,
+	favtvshows,
+	musictaste,
+	favouritefood,
+	superpower,
+	mostconfidentareas,
+	improveknowledge,
+	favouritequote,
+	interestingfact
+) {
 	const data = await query(
-		`INSERT INTO users(fullname,nickname,city,hobbies) VALUES($1,$2,$3,$4)`,
-		[fullname, nickname, city, hobbies]
+		`INSERT INTO users(firstname, lastname, nickname, city, briefintroduction, hobbies, favtvshows, musictaste, 			favouritefood,
+			superpower,
+			mostconfidentareas,
+			improveknowledge,
+			favouritequote,
+			interestingfact) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)`,
+		[
+			firstname,
+			lastname,
+			nickname,
+			city,
+			briefintroduction,
+			hobbies,
+			favtvshows,
+			musictaste,
+			favouritefood,
+			superpower,
+			mostconfidentareas,
+			improveknowledge,
+			favouritequote,
+			interestingfact,
+		]
 	);
 	return data.rows;
 }
