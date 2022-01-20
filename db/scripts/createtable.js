@@ -6,7 +6,7 @@ const sqlString = `CREATE TABLE IF NOT EXISTS users (
     lastname TEXT,
     nickname TEXT,
     city TEXT,
-    briefntroduction TEXT
+    briefintroduction TEXT,
     hobbies TEXT,  
     favtvshows TEXT,
     musictaste TEXT, 
@@ -19,7 +19,7 @@ const sqlString = `CREATE TABLE IF NOT EXISTS users (
 )`;
 
 async function createUsersTable() {
-	const res = await query(sqlString);
-	console.log("Created users table", res);
+  const res = await query(sqlString);
+  console.log("Created users table", res);
 }
 createUsersTable();
