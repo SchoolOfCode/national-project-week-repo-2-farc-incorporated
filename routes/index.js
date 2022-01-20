@@ -16,10 +16,40 @@ import {
 router
 	.route("/users")
 	.post(async (req, res) => {
-		const { fullname, nickname, city, hobbies } = req.body;
+		const {
+			firstname,
+			lastname,
+			nickname,
+			city,
+			briefintroduction,
+			hobbies,
+			favtvshows,
+			musictaste,
+			favouritefood,
+			superpower,
+			mostconfidentareas,
+			improveknowledge,
+			favouritequote,
+			interestingfact,
+		} = req.body;
 		console.log(req.body);
 
-		const result = await addUserToTable(fullname, nickname, city, hobbies);
+		const result = await addUserToTable(
+			firstname,
+			lastname,
+			nickname,
+			city,
+			briefintroduction,
+			hobbies,
+			favtvshows,
+			musictaste,
+			favouritefood,
+			superpower,
+			mostconfidentareas,
+			improveknowledge,
+			favouritequote,
+			interestingfact
+		);
 		res.json({ success: true, message: "user added", payload: result });
 	})
 	.get(async (req, res) => {
